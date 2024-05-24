@@ -101,8 +101,8 @@ def main():
 
     # Plot accuracy scores in a bar plot
     accuracy.plot(kind='bar', ylim=(0.85, 1.0), edgecolor='black', figsize=(10, 5))
-    plt.ylabel('Accuracy Score')
-    plt.title('Distribution by Classifier')
+    plt.ylabel('Accuracy')
+    plt.title('Accuratezza dei vari modelli')
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     plt.tight_layout();
     plt.savefig("../output/accuracy_scores.png")
@@ -113,7 +113,7 @@ def main():
 
     plt.figure()
     plt.bar(consumes.keys(), consumes.values(), color='skyblue')
-    plt.xlabel('Classifier')
+    plt.xlabel('Modello')
     plt.ylabel('Consumo (Joule)')
     plt.title('Consumo dei vari classificatori in addestramento')
     plt.xticks(rotation=45, ha='right')  # Ruota le etichette sull'asse x per una migliore leggibilità

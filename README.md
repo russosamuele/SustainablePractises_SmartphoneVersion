@@ -2,10 +2,17 @@
 
 # Descrizione del Progetto
 
-Un refactoring del progetto SustainablePractises con varie modifiche per rendere più veritiera possibile i rilevamenti su uno smartphone. 
-Per ogni dataset avviene un riscaldamento della macchina per 5 minuti, poi si passa alla fase di training dei modelli (60s rest per ogni addestramento). 
-Infine si fa inferenza per 5 volte su ogni modello (ordine randomico e rest 60s tra un run e l'altro), per poi generare dei grafici riassuntivi. 
-Questo diviso in 3 file distinti.
+Durante il mio tirocinio, ho lavorato su differenti dataset e ho addestrato vari modelli utilizzando una serie di algoritmi, tra cui K-Nearest Neighbors (KNN), Random Forest (RF), Decision Tree Classifier (DCT), Adaptive Boosting (AdaBoost), Support Vector Machine (SVM) e altri. 
+Il focus principale del mio lavoro è stato non solo valutare l'accuratezza dei modelli, ma anche misurare il loro consumo energetico in joule durante la fase di addestramento.
+Successivamente, durante la fase di predizione, per ogni modello, ho calcolato diverse metriche chiave, tra cui l'accuratezza, il peso del modello, il consumo energetico, l'utilizzo della CPU e della memoria. 
+Queste misurazioni sono state ripetute più volte, anche in maniera randomica tra i vari modelli, ed è stata calcolata la media per ottenere risultati più accurati.
+Tra i vari run sono state considerate anche una serie di pause, e un riscaldamento iniziale per avere dei risultati più accurati.
+Infine, ho generato una serie di grafici per visualizzare i risultati ottenuti, inclusi plot delle correlazioni tra l'accuratezza dei modelli e le metriche rilevate.
+
+# Organizzazione progetto
+Il progetto si divide in 3 cartelle distinte, una per ogni dataset. All'interno di ognuna di queste cartelle è possibile trovare, nelle corrispondenti sottocartelle, il dataset, i modelli addestrati, i vari plot e risultati generati. Il core è, per ogni dataset, il file rilevamentiSmartphone.py, che effettuerà in autonomia tutto, a partire dal processing dei dati, al training, fino ad arrivare al plot dei risultati. 
 
 # Ambiente di Lavoro
-Tutto il lavoro è stato eseguito utilizzando uno smartphone Samsung galaxy.
+Tutto il lavoro è stato eseguito utilizzando uno smartphone, con sistema operativo Kali-linux, più precisamente un Samsung galaxy A70, 6+128 anno 2022.
+
+

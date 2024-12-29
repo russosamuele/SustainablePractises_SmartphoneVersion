@@ -145,7 +145,7 @@ def energy_stats(energy_consumption_kwh, energy_tracker):
     return energy_consumption_joules, duration
 
 
-# lista per salvare i risultati delle 5 run per ogni algoritmo
+# lista per salvare i risultati delle 30 run per ogni algoritmo
 all_results = []
 
 model_weight_kb_list = []  # Lista per salvare i pesi del modello
@@ -154,7 +154,7 @@ model_weight_kb_list = []  # Lista per salvare i pesi del modello
 algorithm_names = list(model_paths.keys())
 
 # Numero di run per algoritmo
-num_runs = 5
+num_runs = 30
 
 # Inizializzo un contatore per tenere traccia delle run per ciascun algoritmo
 algorithm_counter = {name: 0 for name in algorithm_names}

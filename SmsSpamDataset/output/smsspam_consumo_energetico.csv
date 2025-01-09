@@ -1,0 +1,7 @@
+Algoritmo,SmsSpam
+SVM,0.54
+Decision Tree,6.25
+KNN,1.13
+Random Forest,72.87
+AdaBoost,38.57
+Bagging Classifier,28.81
